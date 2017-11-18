@@ -2,37 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="email=no" name="format-detection"/>
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
     <title>Document</title>
     <style>
         *{
             margin:0 auto;
         }
-        div{
+        html{
+            font-size: 100px;
+        }
+        #root{
+            height:100%;
+        }
+        .bug{
             width:100%;
             height:100%;
-            margin:0 auto;
-            margin-top:300px;
+            overflow-y: hidden;
         }
-        input{
-            width:100px;
-            height:30px;
-            margin:0 auto;
-            background-color:blue;
+        ul{
+            width:100%;
+            height:100%;
+            overflow: scroll;
         }
-        p{
-            width:200px;
-            height:40px;
-            background-color:red;
+        li{
+            list-style: none;
+            width:100%;
+            height:2rem;
         }
     </style>
 </head>
 <body>
-    <div>
-        <p>
-        <label for="">姓名</label>
-        <input type="text">
-        </p>
-      
+    <div id="root">
+       <div class="bug">
+           <ul>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+               <li>11</li>
+           </ul>
+       </div>
     </div>
 </body>
 </html>
